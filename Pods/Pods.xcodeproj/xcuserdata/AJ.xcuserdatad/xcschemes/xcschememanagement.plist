@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-What's that word?-REFrostedViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-What's that word?.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2685F843FF9EF7717F92E0FC</key>
+		<key>2D7705D2135D9C0F02E52CCF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DFF3B29AFD658CFA386421E1</key>
+		<key>AC11B870476B7681BF3639BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FD69AB963F4021B735A00171</key>
+		<key>B0006B01F3071DE30B1A17FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B3DBA8A7B497ADE4B0345028</key>
 		<dict>
 			<key>primary</key>
 			<true/>

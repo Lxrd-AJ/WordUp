@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2130F06C1ADA9906003C5135 /* FrostedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130F06B1ADA9906003C5135 /* FrostedViewController.swift */; };
 		21616C701AC3396E004C0F1A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21616C6F1AC3396E004C0F1A /* LoginViewController.swift */; };
 		21616C721AC33F45004C0F1A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21616C711AC33F45004C0F1A /* SignupViewController.swift */; };
 		21F07C751AC3214C0008A7EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F07C741AC3214C0008A7EA /* AppDelegate.swift */; };
-		21F07C771AC3214C0008A7EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F07C761AC3214C0008A7EA /* ViewController.swift */; };
 		21F07C7A1AC3214C0008A7EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F07C781AC3214C0008A7EA /* Main.storyboard */; };
 		21F07C7C1AC3214C0008A7EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F07C7B1AC3214C0008A7EA /* Images.xcassets */; };
 		21F07C7F1AC3214C0008A7EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F07C7D1AC3214C0008A7EA /* LaunchScreen.xib */; };
@@ -30,13 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2130F06B1ADA9906003C5135 /* FrostedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedViewController.swift; sourceTree = "<group>"; };
 		2140A1E91ACD77720076BC4C /* What's that word?.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "What's that word?.entitlements"; sourceTree = "<group>"; };
 		21616C6F1AC3396E004C0F1A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		21616C711AC33F45004C0F1A /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		21F07C6F1AC3214C0008A7EA /* What's that word?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What's that word?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F07C731AC3214C0008A7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21F07C741AC3214C0008A7EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21F07C761AC3214C0008A7EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21F07C791AC3214C0008A7EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21F07C7B1AC3214C0008A7EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		21F07C7E1AC3214C0008A7EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -92,17 +92,17 @@
 		21F07C711AC3214C0008A7EA /* What's that word? */ = {
 			isa = PBXGroup;
 			children = (
+				21F07C721AC3214C0008A7EA /* Supporting Files */,
 				2140A1E91ACD77720076BC4C /* What's that word?.entitlements */,
 				21F07C741AC3214C0008A7EA /* AppDelegate.swift */,
-				21F07C761AC3214C0008A7EA /* ViewController.swift */,
 				21F07C781AC3214C0008A7EA /* Main.storyboard */,
 				21F07C7B1AC3214C0008A7EA /* Images.xcassets */,
 				21F07C7D1AC3214C0008A7EA /* LaunchScreen.xib */,
-				21F07C721AC3214C0008A7EA /* Supporting Files */,
 				21F07C941AC3233B0008A7EA /* What's that word?-Bridging-Header.h */,
 				21F07C9B1AC3295E0008A7EA /* HomeViewController.swift */,
 				21616C6F1AC3396E004C0F1A /* LoginViewController.swift */,
 				21616C711AC33F45004C0F1A /* SignupViewController.swift */,
+				2130F06B1ADA9906003C5135 /* FrostedViewController.swift */,
 			);
 			path = "What's that word?";
 			sourceTree = "<group>";
@@ -296,7 +296,7 @@
 				21616C721AC33F45004C0F1A /* SignupViewController.swift in Sources */,
 				21616C701AC3396E004C0F1A /* LoginViewController.swift in Sources */,
 				21F07C9C1AC3295E0008A7EA /* HomeViewController.swift in Sources */,
-				21F07C771AC3214C0008A7EA /* ViewController.swift in Sources */,
+				2130F06C1ADA9906003C5135 /* FrostedViewController.swift in Sources */,
 				21F07C751AC3214C0008A7EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
