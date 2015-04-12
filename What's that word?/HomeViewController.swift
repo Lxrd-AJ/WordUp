@@ -13,6 +13,10 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = false
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu-100"), style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        self.navigationItem.leftBarButtonItem?.imageInsets = UIEdgeInsetsMake(40,0, 30, 60)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem( title: "Search", style: .Plain, target: nil, action: nil )
     }
 
     override func viewDidLoad() {
@@ -30,5 +34,5 @@ class HomeViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-
+    
 }

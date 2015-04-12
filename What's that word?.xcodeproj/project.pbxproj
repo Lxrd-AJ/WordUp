@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2130F06C1ADA9906003C5135 /* FrostedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130F06B1ADA9906003C5135 /* FrostedViewController.swift */; };
+		2130F06E1ADAA087003C5135 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130F06D1ADAA087003C5135 /* MenuViewController.swift */; };
+		2130F0711ADAA386003C5135 /* menu-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 2130F0701ADAA386003C5135 /* menu-512.png */; };
+		2130F0731ADAA45B003C5135 /* menu-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 2130F0721ADAA45B003C5135 /* menu-100.png */; };
 		21616C701AC3396E004C0F1A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21616C6F1AC3396E004C0F1A /* LoginViewController.swift */; };
 		21616C721AC33F45004C0F1A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21616C711AC33F45004C0F1A /* SignupViewController.swift */; };
 		21F07C751AC3214C0008A7EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F07C741AC3214C0008A7EA /* AppDelegate.swift */; };
@@ -31,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		2130F06B1ADA9906003C5135 /* FrostedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedViewController.swift; sourceTree = "<group>"; };
+		2130F06D1ADAA087003C5135 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		2130F0701ADAA386003C5135 /* menu-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-512.png"; sourceTree = "<group>"; };
+		2130F0721ADAA45B003C5135 /* menu-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-100.png"; sourceTree = "<group>"; };
 		2140A1E91ACD77720076BC4C /* What's that word?.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "What's that word?.entitlements"; sourceTree = "<group>"; };
 		21616C6F1AC3396E004C0F1A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		21616C711AC33F45004C0F1A /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2130F06F1ADAA378003C5135 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2130F0701ADAA386003C5135 /* menu-512.png */,
+				2130F0721ADAA45B003C5135 /* menu-100.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		21F07C661AC3214C0008A7EA = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +107,7 @@
 		21F07C711AC3214C0008A7EA /* What's that word? */ = {
 			isa = PBXGroup;
 			children = (
+				2130F06F1ADAA378003C5135 /* Resources */,
 				21F07C721AC3214C0008A7EA /* Supporting Files */,
 				2140A1E91ACD77720076BC4C /* What's that word?.entitlements */,
 				21F07C741AC3214C0008A7EA /* AppDelegate.swift */,
@@ -103,6 +119,7 @@
 				21616C6F1AC3396E004C0F1A /* LoginViewController.swift */,
 				21616C711AC33F45004C0F1A /* SignupViewController.swift */,
 				2130F06B1ADA9906003C5135 /* FrostedViewController.swift */,
+				2130F06D1ADAA087003C5135 /* MenuViewController.swift */,
 			);
 			path = "What's that word?";
 			sourceTree = "<group>";
@@ -241,8 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				21F07C7A1AC3214C0008A7EA /* Main.storyboard in Resources */,
+				2130F0711ADAA386003C5135 /* menu-512.png in Resources */,
 				21F07C7F1AC3214C0008A7EA /* LaunchScreen.xib in Resources */,
 				21F07C7C1AC3214C0008A7EA /* Images.xcassets in Resources */,
+				2130F0731ADAA45B003C5135 /* menu-100.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21616C721AC33F45004C0F1A /* SignupViewController.swift in Sources */,
+				2130F06E1ADAA087003C5135 /* MenuViewController.swift in Sources */,
 				21616C701AC3396E004C0F1A /* LoginViewController.swift in Sources */,
 				21F07C9C1AC3295E0008A7EA /* HomeViewController.swift in Sources */,
 				2130F06C1ADA9906003C5135 /* FrostedViewController.swift in Sources */,

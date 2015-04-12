@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Customizations
         UILabel.appearance().font = UIFont( name: "AvenirNext-Medium", size: 16.0 )
+        self.window?.tintColor = UIColor.blackColor()
         return true
     }
 
