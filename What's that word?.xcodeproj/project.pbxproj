@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2130F06C1ADA9906003C5135 /* FrostedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130F06B1ADA9906003C5135 /* FrostedViewController.swift */; };
-		2130F06E1ADAA087003C5135 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130F06D1ADAA087003C5135 /* MenuViewController.swift */; };
 		2130F0711ADAA386003C5135 /* menu-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 2130F0701ADAA386003C5135 /* menu-512.png */; };
 		2130F0731ADAA45B003C5135 /* menu-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 2130F0721ADAA45B003C5135 /* menu-100.png */; };
+		2130F0DF1ADBA536003C5135 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130F0DE1ADBA536003C5135 /* MenuTransitionManager.swift */; };
+		2130F0E11ADBA568003C5135 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2130F0E01ADBA568003C5135 /* MenuViewController.swift */; };
+		2130F0E31ADBA61E003C5135 /* folder-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 2130F0E21ADBA61E003C5135 /* folder-128.png */; };
+		2130F0E51ADBB24A003C5135 /* user_male2-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 2130F0E41ADBB24A003C5135 /* user_male2-128.png */; };
 		21616C701AC3396E004C0F1A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21616C6F1AC3396E004C0F1A /* LoginViewController.swift */; };
 		21616C721AC33F45004C0F1A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21616C711AC33F45004C0F1A /* SignupViewController.swift */; };
 		21F07C751AC3214C0008A7EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F07C741AC3214C0008A7EA /* AppDelegate.swift */; };
@@ -33,10 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2130F06B1ADA9906003C5135 /* FrostedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedViewController.swift; sourceTree = "<group>"; };
-		2130F06D1ADAA087003C5135 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		2130F0701ADAA386003C5135 /* menu-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-512.png"; sourceTree = "<group>"; };
 		2130F0721ADAA45B003C5135 /* menu-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-100.png"; sourceTree = "<group>"; };
+		2130F0DE1ADBA536003C5135 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
+		2130F0E01ADBA568003C5135 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		2130F0E21ADBA61E003C5135 /* folder-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "folder-128.png"; sourceTree = "<group>"; };
+		2130F0E41ADBB24A003C5135 /* user_male2-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_male2-128.png"; sourceTree = "<group>"; };
 		2140A1E91ACD77720076BC4C /* What's that word?.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "What's that word?.entitlements"; sourceTree = "<group>"; };
 		21616C6F1AC3396E004C0F1A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		21616C711AC33F45004C0F1A /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 		2130F06F1ADAA378003C5135 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2130F0E21ADBA61E003C5135 /* folder-128.png */,
+				2130F0E41ADBB24A003C5135 /* user_male2-128.png */,
 				2130F0701ADAA386003C5135 /* menu-512.png */,
 				2130F0721ADAA45B003C5135 /* menu-100.png */,
 			);
@@ -118,8 +124,8 @@
 				21F07C9B1AC3295E0008A7EA /* HomeViewController.swift */,
 				21616C6F1AC3396E004C0F1A /* LoginViewController.swift */,
 				21616C711AC33F45004C0F1A /* SignupViewController.swift */,
-				2130F06B1ADA9906003C5135 /* FrostedViewController.swift */,
-				2130F06D1ADAA087003C5135 /* MenuViewController.swift */,
+				2130F0DE1ADBA536003C5135 /* MenuTransitionManager.swift */,
+				2130F0E01ADBA568003C5135 /* MenuViewController.swift */,
 			);
 			path = "What's that word?";
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 					};
 					21F07C831AC3214C0008A7EA = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 349P7P3B63;
 						TestTargetID = 21F07C6E1AC3214C0008A7EA;
 					};
 				};
@@ -258,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				21F07C7A1AC3214C0008A7EA /* Main.storyboard in Resources */,
+				2130F0E31ADBA61E003C5135 /* folder-128.png in Resources */,
 				2130F0711ADAA386003C5135 /* menu-512.png in Resources */,
 				21F07C7F1AC3214C0008A7EA /* LaunchScreen.xib in Resources */,
+				2130F0E51ADBB24A003C5135 /* user_male2-128.png in Resources */,
 				21F07C7C1AC3214C0008A7EA /* Images.xcassets in Resources */,
 				2130F0731ADAA45B003C5135 /* menu-100.png in Resources */,
 			);
@@ -313,10 +322,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				21616C721AC33F45004C0F1A /* SignupViewController.swift in Sources */,
-				2130F06E1ADAA087003C5135 /* MenuViewController.swift in Sources */,
+				2130F0E11ADBA568003C5135 /* MenuViewController.swift in Sources */,
 				21616C701AC3396E004C0F1A /* LoginViewController.swift in Sources */,
 				21F07C9C1AC3295E0008A7EA /* HomeViewController.swift in Sources */,
-				2130F06C1ADA9906003C5135 /* FrostedViewController.swift in Sources */,
+				2130F0DF1ADBA536003C5135 /* MenuTransitionManager.swift in Sources */,
 				21F07C751AC3214C0008A7EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +496,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -499,6 +510,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/What's that word?.app/What's that word?";
 			};
 			name = Debug;
@@ -507,6 +519,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -515,6 +529,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/What's that word?.app/What's that word?";
 			};
 			name = Release;

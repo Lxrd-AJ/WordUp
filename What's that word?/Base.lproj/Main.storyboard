@@ -40,7 +40,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="FxI-Ow-FHF">
-                                <rect key="frame" x="0.0" y="142" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="186" width="320" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
@@ -51,8 +51,15 @@
                             <constraint firstItem="FxI-Ow-FHF" firstAttribute="top" secondItem="qpn-h4-1qE" secondAttribute="bottom" constant="122" id="ny9-46-T3o"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="i9x-gQ-7jM"/>
+                    <navigationItem key="navigationItem" id="i9x-gQ-7jM">
+                        <barButtonItem key="leftBarButtonItem" title="Item" style="done" id="0TW-R2-Mpm">
+                            <connections>
+                                <segue destination="0bU-yp-Ltv" kind="modal" modalPresentationStyle="fullScreen" id="Fvh-PR-ixO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="leftBarButton" destination="0TW-R2-Mpm" id="myJ-a4-Hla"/>
                         <outlet property="searchDisplayController" destination="mgz-qD-OSi" id="SLv-wN-RDK"/>
                     </connections>
                 </viewController>
@@ -66,7 +73,81 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1632" y="404"/>
+            <point key="canvasLocation" x="1628" y="404"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="HnA-dh-dZF">
+            <objects>
+                <viewController id="0bU-yp-Ltv" customClass="MenuViewController" customModule="What_s_that_word_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GUH-Ac-GNi"/>
+                        <viewControllerLayoutGuide type="bottom" id="73a-Df-LN8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wuX-pE-vvs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_male2-128.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dx7-Ew-WYP">
+                                <rect key="frame" x="16" y="36" width="128" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="WWS-tF-V5a"/>
+                                    <constraint firstAttribute="height" constant="72" id="axx-pj-8sI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder-128.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gxs-W2-l4b">
+                                <rect key="frame" x="176" y="36" width="128" height="72"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Folders" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQo-ZV-ZQi">
+                                <rect key="frame" x="211" y="116" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cf9-vd-CYT">
+                                <rect key="frame" x="51" y="116" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09c-zf-6wr">
+                                <rect key="frame" x="143" y="518" width="35" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0ac-vH-v7P"/>
+                                    <constraint firstAttribute="width" constant="35" id="luF-ko-HXA"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yfl-PI-XMc" kind="unwind" unwindAction="unwindFromSegue:" id="Q56-w2-EOw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="09c-zf-6wr" secondAttribute="centerX" id="1h7-YR-UGV"/>
+                            <constraint firstItem="cf9-vd-CYT" firstAttribute="baseline" secondItem="fQo-ZV-ZQi" secondAttribute="baseline" id="6RF-ma-H1h"/>
+                            <constraint firstItem="73a-Df-LN8" firstAttribute="top" secondItem="09c-zf-6wr" secondAttribute="bottom" constant="20" id="6Zw-B5-SO3"/>
+                            <constraint firstItem="Gxs-W2-l4b" firstAttribute="top" secondItem="Dx7-Ew-WYP" secondAttribute="top" id="DAN-Pu-dQB"/>
+                            <constraint firstItem="fQo-ZV-ZQi" firstAttribute="top" secondItem="Gxs-W2-l4b" secondAttribute="bottom" constant="8" symbolic="YES" id="GKV-gf-FkA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="09c-zf-6wr" secondAttribute="trailing" constant="126" id="HT5-bn-A40"/>
+                            <constraint firstItem="09c-zf-6wr" firstAttribute="top" secondItem="GUH-Ac-GNi" secondAttribute="bottom" constant="498" id="Y6i-Hd-S6M"/>
+                            <constraint firstItem="Dx7-Ew-WYP" firstAttribute="leading" secondItem="wuX-pE-vvs" secondAttribute="leadingMargin" id="dBW-38-0vb"/>
+                            <constraint firstItem="Gxs-W2-l4b" firstAttribute="bottom" secondItem="Dx7-Ew-WYP" secondAttribute="bottom" id="eyX-Ao-Svx"/>
+                            <constraint firstItem="Dx7-Ew-WYP" firstAttribute="top" secondItem="GUH-Ac-GNi" secondAttribute="bottom" constant="16" id="hQa-ND-ED3"/>
+                            <constraint firstItem="cf9-vd-CYT" firstAttribute="leading" secondItem="wuX-pE-vvs" secondAttribute="leadingMargin" constant="35" id="pUJ-dG-0sF"/>
+                            <constraint firstItem="09c-zf-6wr" firstAttribute="leading" secondItem="wuX-pE-vvs" secondAttribute="leadingMargin" constant="127" id="s9O-rc-rOz"/>
+                            <constraint firstItem="Gxs-W2-l4b" firstAttribute="centerX" secondItem="fQo-ZV-ZQi" secondAttribute="centerX" id="uBJ-EN-ymP"/>
+                            <constraint firstItem="Gxs-W2-l4b" firstAttribute="trailing" secondItem="wuX-pE-vvs" secondAttribute="trailingMargin" id="vDL-gw-g5P"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xRW-vO-ivy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7lm-7L-Fbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="yfl-PI-XMc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2045" y="404"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mjS-X0-WJ5">
@@ -87,6 +168,10 @@
             <point key="canvasLocation" x="1169" y="404"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="folder-128.png" width="128" height="128"/>
+        <image name="user_male2-128.png" width="128" height="128"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

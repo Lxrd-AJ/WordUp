@@ -11,11 +11,14 @@ import Parse
 
 class HomeViewController: UIViewController {
     
+    let transitionManager = MenuTransitionManager()
+    @IBOutlet weak var leftBarButton: UIBarButtonItem!
+    
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = false
         
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu-100"), style: UIBarButtonItemStyle.Plain, target: self, action: nil)
-        self.navigationItem.leftBarButtonItem?.imageInsets = UIEdgeInsetsMake(40,0, 30, 60)
+        leftBarButton.image = UIImage(named: "menu-100")
+        leftBarButton.imageInsets = UIEdgeInsetsMake(35,0, 35, 60)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem( title: "Search", style: .Plain, target: nil, action: nil )
     }
 
@@ -28,6 +31,14 @@ class HomeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func showMenu(){
+        self.performSegueWithIdentifier("showMenu", sender: self);
+    }
+    
+    @IBAction func unwindFromSegue( segue:UIStoryboardSegue ){
+        //unwind from the previous segue
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
