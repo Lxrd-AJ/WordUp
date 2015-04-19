@@ -24,6 +24,11 @@ class MenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+//    @IBAction func showProfile(sender: AnyObject) {
+//        let storyboard = UIStoryboard()
+//        let vc = storyboard.instantiateViewControllerWithIdentifier("profileViewController") as! ProfileViewController
+//        self.performSegueWithIdentifier("showProfile", sender: self)
+//    }
 
     /*
     // MARK: - Navigation

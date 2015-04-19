@@ -47,7 +47,7 @@ class MenuTransitionManager: UIPercentDrivenInteractiveTransition, UIViewControl
     }
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
-        return 0.9
+        return 0.5
     }
     
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {

@@ -38,7 +38,7 @@ class LoginViewController: PFLogInViewController {
         self.signUpController?.delegate = self
         
         //Test, always log out the user for now, IDGAF
-        PFUser.logOut()
+        //PFUser.logOut()
     }
     
     override func viewDidAppear(animated: Bool) {

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AC11B870476B7681BF3639BE"
+               BlueprintIdentifier = "E49579023B79B0D6BFE35BE4"
                BuildableName = "libPods-What&apos;s that word?-REFrostedViewController.a"
                BlueprintName = "Pods-What&apos;s that word?-REFrostedViewController"
                ReferencedContainer = "container:Pods.xcodeproj">
